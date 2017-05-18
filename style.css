@@ -1,0 +1,41 @@
+#map {
+    margin-left: auto ;
+  margin-right: auto ;
+    height: 50%;
+    width:50%;
+}
+.buttonHolder {
+     text-align: center;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+}
+h1 { 
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center; 
+    color:white;
+}
+body{
+     background-image: url("http://wallpapercave.com/wp/UPMbR6d.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+}
+header {
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background:transparent;
+}
+#map {
+    color:black;
+}
+label, h5 {
+    font-size:16px;
+}

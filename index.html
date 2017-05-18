@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV8LWhOohSCpsJCV85HQ2TbfNAdiE6Vp8&libraries=places"
+            async defer></script>
+    <script src="script.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body> 
+  <header class=" text-center">
+    <h1>STARBUCKS GUESS</h1>  
+    <hr>    
+  </header>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <h3> 
+            Guess how many Starbucks at your current location
+            </h3>
+            <h5>
+                Step1 : Choose miles options 
+            </h5>
+          <div id="radioButtonContainer">
+               <label class="radio-inline"><input type="radio" name="optradio" value="1609.35">1 Miles</label>
+                <label class="radio-inline"><input type="radio" name="optradio" value="3218.69">2 Miles</label>
+                <label class="radio-inline"><input type="radio" name="optradio" value="4828.03">3 Miles</label>
+                <label class="radio-inline"><input type="radio" name="optradio" value="6437.38">4 Miles</label>
+            </div>
+            <h5>
+                Step2 : Start guessing by using number and submit button
+            </h5>
+            <div class="input-group">
+                <input type="text" class="form-control" id="guess_input"> 
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="button">Submit</button>
+                </span>
+            </div>
+            <h5>
+                Step 3: Adjust number if it's too high or too low 
+            </h5>    
+            <div class="col-md-12 input-group">
+                <input type="text" class="form-control" id="show_result">         
+            </div>
+        </div>
+    </div>   
+        <div id="map"></div>
+        <div class="buttonHolder">
+            <button type="button" class="btn btn-default" id="traffic">Traffic</button>
+    </div>
+</body>
+</html>
